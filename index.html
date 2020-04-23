@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .output-block{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 50%;
+            overflow-y: scroll;
+            box-shadow: 0 0 15px 1px black;
+            border-radius: 5px;
+
+        }
+
+        .output-message{
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 5px;
+            padding: 5px 20px;
+        }
+        
+        .output-message h3{
+            border-bottom: 1px solid gray;
+        }
+
+        .output-message small{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h2>Напишите сообщение</h2>
+    <div class="input-block">
+        <input type="text" class="name" placeholder="Name">
+        <input type="text" class="msg" placeholder="Message">
+        <button class="send">Send</button>
+    </div>
+    <h2>Сообщения:</h2>
+    <div class="output-block">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
